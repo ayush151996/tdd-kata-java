@@ -46,7 +46,6 @@ public class GeneralTest  {
 		int output = test.tddkata(str1);
 		assertEquals(6, output);
 	}
-	//6-Negative numbers throw an exception
-	//7-Numbers greater than 1000 are ignored
+	//Negative numbers throw an exception
 	
 }
