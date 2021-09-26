@@ -40,7 +40,7 @@ public class tddkata {
 		// read each character in input string
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
-			
+			int parse=0;
 			// if current character is a digit
 			if (Character.isDigit(ch)) {
 				temp += ch;
@@ -48,19 +48,19 @@ public class tddkata {
 
 			// if current character is an alphabet
 			else {
-				// increment sum by number found earlier(if any)
+				parse=Integer.parseInt(temp);// increment sum by number found earlier(if any)
+				if(parse < 0){
 				sum += Integer.parseInt(temp);
+				}
 
 				// reset temporary string to empty
 				temp = "0";
 			}
 		}
 
-		
 		// numbers
 		return sum + Integer.parseInt(temp);
 	}
-		// A temporary string
 	return sum;	
 	}
 
